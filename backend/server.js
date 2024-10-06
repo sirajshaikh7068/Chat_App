@@ -30,8 +30,10 @@ main()
 	.catch((err) => console.log(err));
 
 async function main() {
-	await mongoose.connect(process.env.MONGODB_URI);
+	await mongoose.connect("mongodb+srv://sirajshaikh7068:ySJ0KYpcVYg7h9kF@cluster0.cjbe3.mongodb.net/Cluster0?retryWrites=true&w=majority&appName=Cluster0"));
 }
+
+
 
 // Root route
 app.get("/", (req, res) => {
